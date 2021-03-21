@@ -1,8 +1,12 @@
 # custom-mailer-laravel
 
-Installation - Laravel >= 6
-composer require ligorikus/custom-mailer-laravel
-Publish the config file by running `php artisan vendor:publish --provider="Ligorikus\CustomMailerLaravel\ServiceProvider"`. 
+## Installation
+`composer require ligorikus/custom-mailer-laravel`
+
+Publish the config file by running 
+
+`php artisan vendor:publish --provider="Ligorikus\CustomMailerLaravel\ServiceProvider"`. 
+
 The config file will give you control over which storage engine to use as well as some storage-specific settings.
 
 array config:
