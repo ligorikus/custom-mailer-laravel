@@ -26,9 +26,9 @@ class Mailgun implements Component
      * Mailgun constructor.
      * @param string $api_key
      * @param string $server
-     * @param string $domain
+     * @param string|null $domain
      */
-    public function __construct(string $api_key, string $server, string $domain)
+    public function __construct(string $api_key, string $server, string $domain = null)
     {
         $this->api_key = $api_key;
         $this->server = $server;

@@ -16,6 +16,7 @@ class CustomMailer
      */
     public function build(array $config) :?Swift_Mailer
     {
+        // Creating a new chain of responsibility to select a mail transport
         $mailgun = new MailgunHandler();
         /** @var Handler $smtp */
         $smtp = new SmtpHandler();

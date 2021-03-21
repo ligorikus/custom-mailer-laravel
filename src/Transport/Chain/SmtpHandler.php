@@ -11,7 +11,7 @@ class SmtpHandler extends AbstractHandler
 {
     public function handle(array $config): ?Swift_Transport
     {
-        if ($config['use_smtp']) {
+        if ($config['use_smtp'] && $config['smtp_host'] != null) {
             $smtp = new \Ligorikus\CustomMailerLaravel\Component\Smtp($config['smtp_host'], $config['smtp_username'], $config['smtp_password'], $config['smtp_encryption'], $config['smtp_port']);
             return (new Smtp())->make($smtp);
         } else {
