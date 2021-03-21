@@ -1,0 +1,17 @@
+{
+    "name": "ligorikus/custom-mailer-laravel",
+    "description": "Custom mailer for laravel mailer",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ligorikus",
+            "email": "semal551@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "swiftmailer/swiftmailer": "^6.0",
+        "illuminate/support": "^6|^7|^8|^9"
+    }
+}
