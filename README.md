@@ -2,10 +2,11 @@
 
 Installation - Laravel >= 6
 composer require ligorikus/custom-mailer-laravel
-Publish the config file by running php artisan vendor:publish --provider="Ligorikus\CustomMailerLaravel\ServiceProvider" --tag="config". 
+Publish the config file by running `php artisan vendor:publish --provider="Ligorikus\CustomMailerLaravel\ServiceProvider"`. 
 The config file will give you control over which storage engine to use as well as some storage-specific settings.
 
 array config:
+```
 [
   'use_mailgun'
   /* If use_mailgun is true next params required */
@@ -21,4 +22,4 @@ array config:
   'smtp_encryption' //optional
   'smtp_port' //optional
 ]
-
+```
