@@ -7,8 +7,6 @@ Publish the config file by running
 
 `php artisan vendor:publish --provider="Ligorikus\CustomMailerLaravel\ServiceProvider"`. 
 
-The config file will give you control over which storage engine to use as well as some storage-specific settings.
-
 array config:
 ```
 [
